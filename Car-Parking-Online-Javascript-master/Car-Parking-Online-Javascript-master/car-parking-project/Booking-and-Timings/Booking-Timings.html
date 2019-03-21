@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./booking-timings.css">
+</head>
+<body>
+    <div class="back-img">
+        <h1>Welcome User <br> What do you want to do ?</h1>
+        <div class="Booking">
+            
+            <input onclick="booking()" type="button" value="Booking..">
+            
+        </div>
+        <div class="Timings">
+            <input onclick="timings()" type="button" value="Slips..">
+        </div>
+    </div>
+
+    <script>
+        function booking(){
+            window.location.assign("../placesOfParking/placesOfParking.html")
+        }
+        function timings(){
+            window.location.assign("../Slips/slip.html")
+        }
+    
+    </script>
+</body>
+</html>

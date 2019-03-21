@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parking.html</title> 
+    <link rel="stylesheet" href="parking.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    
+</head>
+<body>
+    <div class="image">
+
+        <main class="main">
+            <h1 class="">Booking Timings</h1>
+        </main>
+
+        <div  class="main-select">
+            
+            <div id="select-div" class=" select-div">
+                <div class="date-div">
+                    <h4><span class="font">Date:</span> <input onblur="dateTimeHours()"  id="date" type="date" > </h4>
+                </div>
+            
+                <div class="time-div">
+                    <h4>
+                    <span class="font">Time:</span>
+                    <input onblur="dateTimeHours()" id="time" type="time">
+                    </h4>
+                </div>
+                <div class="hours-div">
+                    <h4>
+                    <span class="font">Hours:</span>
+                    <select class="hours" onblur="dateTimeHours()"  id="hours">
+                        <option selected>1</option>
+                        <option >2</option>
+                        <option >3</option>
+                        <option >4</option>
+                        <option >5</option>
+                        <option >6</option>
+                        <option >7</option>
+                        <option >8</option>
+                        <option >9</option>
+                        <option >10</option>
+                        <option >11</option>
+                        <option >12</option>
+                        <option >13</option>
+                        <option >14</option>
+                        <option >15</option>
+                        <option >16</option>
+                        <option >17</option>
+                        <option >18</option>
+                        <option >19</option>
+                        <option >20</option>
+                        <option >21</option>
+                        <option >22</option>
+                        <option >23</option>
+                        <option >24</option>
+
+                    </select>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="selectSlot">
+            <input disabled="disabled" id="selectSlot" onclick="selectedSlot()" type="button" value="Select Slot" class="btn-lg btn-default">
+        </div>
+        <div id="reservation" class="reservation hidden">
+            
+            <div id="road-img" class="road-img">
+                <div class="slots">
+                    
+                    <div class="row1">
+                        <input id="slot1"  onclick="slotSelect(slot1)" class="slot1 btn btn-success btn-lg" value="Slot-1" type="button">                  
+                        <input id="slot2" onclick="slotSelect(slot2)" class="slot2 btn btn-success btn-lg" value="Slot-2" type="button">           
+                        <input id="slot3" onclick="slotSelect(slot3)" class="slot3 btn btn-success btn-lg" value="Slot-3" type="button">
+                        <input id="slot4" onclick="slotSelect(slot4)" class="slot4 btn btn-success btn-lg"value="Slot-4" type="button">
+
+                    </div>
+                    <div class="row2">
+                        <input id="slot5" onclick="slotSelect(slot5)" class="slot1 btn btn-success btn-lg" value="Slot-5" type="button">
+                        <input id="slot6" onclick="slotSelect(slot6)" class="slot2 btn btn-success btn-lg" value="Slot-6" type="button">
+                        <input id="slot7" onclick="slotSelect(slot7)" class="slot3 btn btn-success btn-lg" value="Slot-7" type="button">
+                        <input id="slot8" onclick="slotSelect(slot8)" class="slot4 btn btn-success btn-lg" value="Slot-8" type="button">
+
+                    </div>       
+                </div>
+            </div>
+
+        </div> <br>
+        <div class="row">
+            <div  class="done">
+                <button disabled="disabled" id="donebtn" onclick="comparingDBUserDataAndInserting()" class="hidden btn btn-lg btn-primary">Done</button>
+            </div>
+        </div>
+    </div>
+ 
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDtifQbLdReFHhJIxNvObOtpHtlpujdhK8",
+            authDomain: "my-project-1-5f5ff.firebaseapp.com",
+            databaseURL: "https://my-project-1-5f5ff.firebaseio.com",
+            projectId: "my-project-1-5f5ff",
+            storageBucket: "my-project-1-5f5ff.appspot.com",
+            messagingSenderId: "59396975914"
+        };
+        firebase.initializeApp(config);
+    </script> -->
+    <script src="./parking.js"></script>
+
+
+</body>
+</html>

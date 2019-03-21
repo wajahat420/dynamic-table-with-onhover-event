@@ -1,0 +1,154 @@
+body{
+    min-width: 700px;
+    background: url("C:/Users/123/Desktop/Java Script/My Websites/car-parking-project/images/garrage.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 650px;
+}
+.bg-image{
+    min-width: 700px;
+    background: url("C:/Users/Glow computers/Desktop/My Websites/car-parking-project/images/garrage.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 650px; 
+}
+.header{
+    padding: 10px;
+    text-align: center;    
+}
+
+
+.header h1{
+    color: rgb(226, 67, 67);
+    font-size: 4em;
+    word-spacing: 10px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+/*  Field Items   */
+
+.main-div-for-fiels{
+    text-align: center
+}
+
+.field-items{
+    margin-top: 4.2% !important; 
+    width: 30%;
+    margin: auto;
+}
+.field-items > *{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.field-items input{
+    border: none;
+    font-size: 18px;
+}
+
+footer{
+    margin-top: 0px !important;
+}
+
+.field-items > input[type="password"],input[type="email"]{
+    margin-top: 35px;
+    background-color: rgba(255, 255, 255, 0.356);
+    height: 40px;
+    border-radius: 70px;
+}
+.field-items > input[type="password"]::placeholder,input[type="email"]::placeholder{
+    letter-spacing: 2px;
+    padding: 3px;
+    font-size: 17px !important; 
+    color: white;
+}
+
+.field-items > input[type="button"]{
+    transition: 0.5s;
+    background-color: rgb(59, 196, 196);
+    height: 38px;
+    border-radius: 70px;
+}
+
+.field-items > input[type="button"]:hover{
+    background-color: rgb(245, 154, 170);
+}
+.field-items > input[type="button"]:active{
+    transform: translateY(2px)
+}
+.field-items  > label {
+    font-size: 15px;
+    font-weight: 0;
+}
+
+
+input[type="checkbox"]{
+    margin: 20px 5px 20px 0px;
+    background-color: aqua;
+    color: aqua;
+}
+.field-items p{
+    word-spacing: 10px;
+    letter-spacing: 7px;
+    font-size: 2em;
+    margin-bottom: 25px; 
+}
+div  >a{  
+
+    font-size: 16px;
+    color: rgb(235, 61, 61);
+}
+div > a:hover{
+    color: rgb(59, 196, 196);
+
+}
+
+/*  Footer   */
+
+.main-div-for-fiels footer,a{
+    letter-spacing: 1.2px;
+    color: white;
+}
+.main-div-for-fiels a{
+    padding-top: 5%;
+
+} 
+footer{
+    padding-top: 20px;
+}
+footer  a:hover {
+    color: rgb(59, 196, 196);
+
+}
+
+
+/*    Media Queries....   */
+@media ( max-width: 950px){
+    .navbar{
+        width: 100%;
+    }
+    .field-items{
+        width: 40%;
+        margin: auto;
+    }
+
+}
+@media ( max-width: 770px){
+    .bg-image{
+        height: 700px;
+    }
+    .navbar-ul    li {
+        font-size: 15px;
+        display: inline;
+        margin-left: 10px;
+    }
+    .nav-div-1{
+        font-size: 1.2em; 
+    }
+}
+
+
+
+

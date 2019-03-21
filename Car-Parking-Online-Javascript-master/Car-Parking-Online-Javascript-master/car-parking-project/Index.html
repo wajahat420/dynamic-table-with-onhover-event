@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign-in Form </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./car-parking-sign-in/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./car-parking-sign-in/css/Sign-in.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+  <main class="bg-image">
+      <div class="header">
+        <h1 href="">Car Parking Login</h1>
+      </div>
+
+<!--    navbar Ends -->
+    <div class="main-div-for-fiels">
+
+      <div class="field-items">
+        <p>Login Now</p>
+        <input id="name" type="email" placeholder="Email@example.com">
+        <input id="password" type="password" placeholder="Password">
+        <label for="">  <input type="checkbox"> Keep me logged in  </label>
+        <input id="submit" type="button" value="Log In">
+        <div><a href="./SIgn-up/sign-up.html">Forgot Password?Sign-up</a></div>
+      </div>
+
+      <footer>
+        © 2019 Car Parking Sign-up Form . All rights reserved | Design by <span><a href="">Wajahat Sarwat</a></span>
+      </footer>
+    </div>
+
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyDtifQbLdReFHhJIxNvObOtpHtlpujdhK8",
+          authDomain: "my-project-1-5f5ff.firebaseapp.com",
+          databaseURL: "https://my-project-1-5f5ff.firebaseio.com",
+          projectId: "my-project-1-5f5ff",
+          storageBucket: "my-project-1-5f5ff.appspot.com",
+          messagingSenderId: "59396975914"
+      };
+      firebase.initializeApp(config);
+  </script>
+  <script src="./car-parking-sign-in/Sign-in.js"></script>
+</body>
+</html>
+
+

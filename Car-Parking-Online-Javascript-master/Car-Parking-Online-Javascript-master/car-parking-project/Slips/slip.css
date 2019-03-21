@@ -1,0 +1,26 @@
+.container{
+    min-width: 770px;
+    font-size: 2em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.row1{
+    color: aliceblue;   
+    background-color: blueviolet;
+    padding: 35px 0px 35px 0px;
+    text-align: center;
+    border: 2px solid rgb(112, 81, 81);
+    width: 250px;
+    float: left;
+    margin: 4% auto 10% auto;
+}
+
+
+[class="row1"]:hover{
+    cursor: pointer;
+    color: black !important;
+    background-color: white;
+    box-shadow:   0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.89);
+}

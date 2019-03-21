@@ -1,0 +1,81 @@
+.image{
+    min-width: 760px;
+    padding: 5px;
+    background: url("C:/Users/Glow computers/Desktop/My Websites/car-parking-project/images/car7.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 770px;
+    text-align: center;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Barlow', sans-serif;
+}
+h1,h2{
+    font-weight: 100;
+    word-spacing: 10px;
+}
+h1{
+    margin: 0px;
+    letter-spacing: 3px;
+    word-spacing: 5px; 
+    font-size: 3.7em;
+    color: white;
+}
+h2{
+    margin-bottom: 20px;
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: rgb(236, 236, 19);
+
+}
+.form{
+    padding: 5px 20px;
+    padding-bottom: 50px !important;
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 50%;
+    margin: auto;
+}
+input{
+    margin-top: 20px !important;
+    /* height: 40px; */
+    margin: 1.2%;
+    width: 40%;
+    font-size: 1.2em;
+    padding: 2%;
+}
+input::placeholder{
+    color: black;
+
+}
+.address{
+    width: 89%;
+}
+input[type="submit"]{
+    margin: auto;
+    background-color: rgb(104, 187, 219);
+    border: none;
+}
+input[type="submit"]:hover{
+    transition: 0.6s;
+    background-color: white;
+
+}
+@media(max-width: 1150px){
+    .form{
+        width: 60%;
+    }
+
+}
+@media(max-width: 850px){
+    .form{
+        width: 70%;
+    }
+    h1{
+        font-size: 3.2em;
+    }
+    h2{
+        font-size: 2.4em;
+    }
+}

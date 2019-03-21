@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign-up</title>
+    <!-- <link href="//fonts.googleapis.com/css?family=Barlow:300,400,500,600" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="./sign-up.css">
+</head>
+<body>
+    <main class="image">
+        <h1>Car Parking Sign-up</h1>
+        <div class="form">
+            <h2>Personal Details</h2>
+            <div class="all-Inputs">
+                <input id="firstName" required placeholder="Name" type="text">
+                <input required placeholder="Last Name" type="text">
+                <input id="email" required placeholder="Email" type="email">
+                <input id="password" required placeholder="Password" type="password">
+                <input id="address" required placeholder="Address" class="address" type="text">
+                <input id="phoneNo" required placeholder="Phone No." type="text">
+                <input  placeholder="Town" type="text">
+                <input   placeholder="Country" type="text">
+                <input  placeholder="City" type="text">
+                <input required  type="submit" value="SUBMIT" onclick="submitData()">
+
+            </div>
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDtifQbLdReFHhJIxNvObOtpHtlpujdhK8",
+        authDomain: "my-project-1-5f5ff.firebaseapp.com",
+        databaseURL: "https://my-project-1-5f5ff.firebaseio.com",
+        projectId: "my-project-1-5f5ff",
+        storageBucket: "my-project-1-5f5ff.appspot.com",
+        messagingSenderId: "59396975914"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+
+    <script src="./sign-up.js"></script>
+</body>
+</html>
